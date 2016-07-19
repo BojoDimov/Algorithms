@@ -18,6 +18,7 @@ int main() {
 
 	/*for (auto n : coder->decode_sequence(coder->encode_sequence(test))) {
 		cout << n << " ";
+
 	}*/
 	for (auto n : coder->encode_sequence(test)) {
 		cout << n << " ";
