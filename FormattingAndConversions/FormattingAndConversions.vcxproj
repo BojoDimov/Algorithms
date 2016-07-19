@@ -142,7 +142,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="HelperService.cpp" />
+    <ClCompile Include="NullSuppressionCoder.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HelperService.h" />
+    <ClInclude Include="NullSuppressionCoder.h" />
+    <ClInclude Include="SequenceCoder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
