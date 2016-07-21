@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "NullSuppressionCoder.h"
+#include "BitMaskCoder.h"
 #include "HelperService.h"
 using namespace std;
 
@@ -14,13 +15,14 @@ int main() {
 		test.push_back(temp);
 	}
 
-	SequenceCoder* coder = new NullSuppressionCoder(2);
+	SequenceCoder* coder = new BitMaskCoder();
 
-	/*for (auto n : coder->decode_sequence(coder->encode_sequence(test))) {
+	for (auto n : coder->decode_sequence(coder->encode_sequence(test))) {
+		cout << n << " ";
+
+	}
+	/*for (auto n : coder->encode_sequence(test)) {
 		cout << n << " ";
 	}*/
-	for (auto n : coder->encode_sequence(test)) {
-		cout << n << " ";
-	}
 	return 0;
 }

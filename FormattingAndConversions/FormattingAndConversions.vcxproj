@@ -142,11 +142,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BitMaskCoder.cpp" />
     <ClCompile Include="HelperService.cpp" />
     <ClCompile Include="NullSuppressionCoder.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BitMaskCoder.h" />
     <ClInclude Include="HelperService.h" />
     <ClInclude Include="NullSuppressionCoder.h" />
     <ClInclude Include="SequenceCoder.h" />
